@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: dostavim
+    ports:
+      - 3306:3306
+    volumes:
+      - ./scripts/CREATE.sql:/docker-entrypoint-initdb.d/create.sql
+
+  init-db:
+    build: ./DostavimVse
+    depends_on:
+      - db
+    ports:
+      - 8080:8080      
+
