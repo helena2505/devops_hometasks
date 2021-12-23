@@ -1,1 +1,0 @@
-{"virtualbox":{"/etc/apache2/sites-available/":{"guestpath":"/etc/apache2/sites-available","hostpath":"C:/devops/task3/conf","disabled":false,"__vagrantfile":true},"/etc/ssl/":{"guestpath":"/etc/ssl","hostpath":"C:/devops/task3/ssl","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/devops/task3","disabled":false,"__vagrantfile":true}}}
